@@ -73,7 +73,7 @@ class Comment (db.Model):
     parent_post = relationship("BlogPost", back_populates="comments_blog")
 
 
-db.create_all()
+# db.create_all()
 
 
 def admin_only(function):
